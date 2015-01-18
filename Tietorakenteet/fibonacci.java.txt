@@ -1,0 +1,14 @@
+public static long[] fiboSeq = new long[100];
+    
+    public static long fibo(long n){
+        fiboSeq[0] = 0;
+        fiboSeq[1] = 1;
+        
+        for(int i=2;i<n;i++){
+            fiboSeq[i] = fiboSeq[i-2] + fiboSeq[i-1];
+        }
+        
+        System.out.println(Arrays.toString(fiboSeq));
+        
+        return 0;
+    }
